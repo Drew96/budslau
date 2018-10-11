@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="be">
+<head>
+  <meta charset="UTF-8">
+  <title>Budslau</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburgers.css">
+  <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body class="index">
+  <header class="clearfix">
+    <button class="hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>  
+    <nav class="main-nav">
+      <div class="main-nav-wrapper">
+        <ul>
+          <li class="active"><a href="#">Главная</a></li><li><a href="#">Новости</a></li><li><a href="#">История костела</a></li><li><a href="#">Образ</a></li><li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Санктуарый Маці Божай Будслаўскай</h1>
+  </main>
+  <footer>
+    <div class="footer-wrapper clearfix">
+      <div class="footer-column footer-column-1">
+        <div class="column-title">Меню</div>
+        <nav class="secondary-nav">
+          <ul>
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">История костела</a></li>
+            <li><a href="#">Образ</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-column footer-column-2">
+        <div class="column-title">Соц. сети</div>
+        <ul class="social">
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-column-3">
+        <div class="column-title">Контакты</div>
+        <div>Чырвоная плошча, 8 <br>
+          в. Будслаў <br>
+          Мядзельскі р-н <br>
+          Мінская вобл. <br>
+          +375 00 000-00-00
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  $(document).ready(function(){
+    $('header .hamburger').click(function(){
+      $('header .hamburger').toggleClass('is-active');
+      $('header .main-nav').toggleClass('active');
+    });
+  });
+</script>
+</html>
